@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Layout CSS Grid</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container-grid {
+        display: grid;
+        background-color: #2196f3;
+        grid-gap: 8px;
+        padding: 8px;
+      }
+      .container-grid > div {
+        background-color: #d3eafd;
+        padding: 12px;
+        text-align: center;
+      }
+      .header {
+        grid-column: 1/4;
+      }
+      .menu {
+        grid-row: 2/4;
+      }
+      .main {
+        grid-column: 2/3;
+      }
+      .footer {
+        grid-column: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-grid">
+      <div class="header">Header</div>
+      <div class="menu">Menu</div>
+      <div class="main">Main</div>
+      <div class="right">Right</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

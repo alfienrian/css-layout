@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Flex Box</title>
+    <style>
+      .wadah_flex {
+        display: flex;
+        background-color: chocolate;
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+      }
+      .wadah_flex > div {
+        background-color: #fff;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wadah_flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <p>
+      Kesimpulan skenario 1 adalah : pada saat menerapkan display: flex, semua
+      elemen div akan ditampilkan menyamping ke kanan.
+    </p>
+    <p>
+      kesimpulan skenario 2 adalah : setelah menerapkan style css pada
+      masing-masing elemen div, kita bisa melihat tampilan flex elemen div
+      dengan jelas.
+    </p>
+    <p>
+      Kesimpulan skenario 3 adalah : setelah mencoba menerapkan flex-direction
+      pada class wadah-flex, terdapat perubahan tampilan div. Jika menerapkan
+      nilai "column" maka hasilnya menjadi kolom menurun, jika menerapkan nilai
+      "row" maka elemen div akan menjadi baris. begitu pula dengan nilai
+      "row-reverse" dan "column-reverse" dimana mempunyai kegunaan yang sama
+      akan tetapi hasilnya menjadi terbalik
+    </p>
+    <p>
+      Kesimpulan skenario 4 adalah : pada saat mencoba menerapkan properti
+      flex-wrap dengan nilai "wrap", elemen div akan menyesuaikan posisi pada
+      saat browser di resize. pada saat menerapkan nilai "nowrap" hasilnya
+      elemen div akan tetap pada baris pertama dan tidak menyesuaikan posisi
+      pada browser di resize. pada saat menerapkan nilai "wrap-reverse" sama
+      seperti "wrap" tapi hasilnya menjadi terbalik
+    </p>
+    <p>
+      Kesimpulan skenario 5 adalah : properti flex-flow merupakan gabungan
+      properti "flex-direction" dan "flex-wrap", jika kita ingin menerapkan
+      flex-direction dengan nilai "row-reverse" dan flex-wrap dengan nilai
+      "wrap" kita bisa menulisnya seperti berikut flex-flow: row-reverse wrap;
+    </p>
+    <p>
+      Kesimpulan skenario 6 : properti justify-content digunakan untuk mengatur
+      distribusi konten elemen div pada class wadah_flex, jika kita menerapkan
+      nilai "flex-start" maka elemen disejajarkan di tepi kiri. Jika kita
+      menerapkan nilai "flex-end" maka elemen disejajarkan di tepi kanan, jika
+      kita menerapkan nilai "center" maka elemen disejajarkan di tengah, jiak
+      kita menerapkan nilai "space-between" maka elemen disejajarkan dengan
+      ruang yang sama di antara elemen lain, nilai "space-around" dan
+      "space-evenly" sama seperti "space-between" akan tetapi terdapat jarak
+      pada tepi kiri dan kanan.
+    </p>
+  </body>
+</html>
